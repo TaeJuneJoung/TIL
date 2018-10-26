@@ -1,9 +1,13 @@
 package CollectionFramework;
 
+import java.io.FileReader;
+import java.io.IOException;
+import java.net.URLDecoder;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Properties;
 import java.util.Set;
 
 /* Collection Framework에는
@@ -81,6 +85,26 @@ public class MapMap {
 		/* 객체 삭제 */
 		//clear() : 모든 Map.Entry(키와 값)를 삭제 - void
 		//remove(Object key) : 주어진 키와 일치하는 Map.Entry를 삭제하고 값을 리턴 -Value
+		
+		System.out.println();
+		
+		/* Properties */
+		Properties properties = new Properties();
+		try {
+			String path = "test.properties위치";//공유된 파일이라 경로 붙여넣지 않음 - 사용시 붙여넣을것
+			path = URLDecoder.decode(path, "utf-8");
+			properties.load(new FileReader(path));
+			Set proSet = properties.keySet();
+			Iterator<String> proIter = proSet.iterator();
+			while(proIter.hasNext()) {
+				String key = proIter.next();
+				String value = properties.getProperty(key);
+				System.out.println(key + "\t : \t" +value);
+			}
+		} catch (IOException e) {
+			System.out.println("지정경로를 넣어주지 않으면 안돼요!");
+			e.printStackTrace();
+		}
 		
 	}//end of main
 }//end of class

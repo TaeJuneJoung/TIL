@@ -10,7 +10,7 @@ import java.util.Set;
  *  그리고 이미 있는 객체들의 해시코드와 비교한다. 동일 해시코드가 있다면 동일 객체로 판단하고 중복 저장을 하지 않는다.
  * */
 
-public class HashSetEx {
+public class SetHashSetEx {
 	public static void main(String[] args) {
 		
 		Set<Member> set = new HashSet<Member>();
