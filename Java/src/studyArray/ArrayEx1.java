@@ -1,4 +1,4 @@
-package ArrayStudy;
+package studyArray;
 
 /* 문제 이미지는 Array.img에 있습니다.*/
 public class ArrayEx1 {

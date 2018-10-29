@@ -1,4 +1,4 @@
-package CollectionFramework;
+package studyCollectionFramework;
 
 import java.io.FileReader;
 import java.io.IOException;

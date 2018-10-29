@@ -1,4 +1,4 @@
-package CollectionFramework;
+package studyCollectionFramework;
 import java.util.Arrays;
 
 /*

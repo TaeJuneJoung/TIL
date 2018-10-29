@@ -1,4 +1,4 @@
-package CollectionFramework;
+package studyCollectionFramework;
 
 import java.util.ArrayList;
 import java.util.HashSet;
