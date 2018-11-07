@@ -1,5 +1,9 @@
 package studyInheritance;
 
+/* 
+ * 
+ * 객체 타입 확인(instanceof)
+ * */
 public class StudyInheritanceEx {
 	public static void main(String[] args) {
 
@@ -16,7 +20,25 @@ public class StudyInheritanceEx {
 		par.method1();
 		par.method2();
 		
+		//아래와 같이 하게 되면 3가지 method를 다 사용할 수 있다.
+		Son son2 = (Son) par;
+		son2.getSonNo();
+		son2.method1();
+		son2.method2();
+		son2.method3();
+//		Son son3 = (Son) new Parent();//studyInheritance.Parent cannot be cast to studyInheritance.Son
+		
+		//객체 타입 확인(instanceof)
+		StudyInheritanceEx st = new StudyInheritanceEx();
+		st.method(par);
+		
 	}//end of main
+	public void method(Parent par) {
+		if(par instanceof Son) {
+				Son son = (Son) par;
+				System.out.println("가능");
+		}
+	}
 }//end of class
 
 class Parent{
