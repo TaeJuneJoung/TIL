@@ -26,12 +26,14 @@ public class StudyNestedClass {
 	public class NestedClassEx{//중첩 클래스의 경우 public일 때 public 사용 가능
 	//중첩 클래스를 사용하면 두 클래스의 멤버들을 서로 쉽게 접근할 수 있다는 장점과
 	//외부에는 불필요한 관계 클래스를 감춤으로써 코드의 복잡성을 줄일 수 있다
+		
 	}
 	
 	public interface NestedInterfaceEx{
 	//해당 클래스와 긴밀한 관계를 맺는 구현 클래스를 만들기 위해 인터페이스를 내부에 선언
 	//중첩 인터페이스는 주로 UI프로그래밍에서 이벤트를 처리할 목적으로 많이 활용
 	//	ex) 안드로이드에서 View클래스 내부에 OnClickListener
+		
 	}
 	
 }//end of class
