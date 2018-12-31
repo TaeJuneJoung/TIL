@@ -2,7 +2,7 @@
 
 https://wikidocs.net/
 
-
+<br><br>
 
 ### 파이썬의 자료형
 
@@ -10,27 +10,27 @@ https://wikidocs.net/
 
   1. 정수(Integer)
 
-     : 양의 정수, 음의 정수, 0
+     : 양의 정수, 음의 정수, 0<br>
 
   2. 실수(Floating-point)
 
-     : 소수(소수점이 포함된 숫자들)
+     : 소수(소수점이 포함된 숫자들)<br>
 
-  3. 2진수(Binary number)
+  3. 2진수(Binary number)<br>
 
-  4. 8진수(Octal)
+  4. 8진수(Octal)<br>
 
-  5. 16진수(Hexadecimal)
+  5. 16진수(Hexadecimal)<br>
 
+<br>
 
+[참고자료 : [2, 8, 16진수 표현법]](https://github.com/TaeJuneJoung/TIL/blob/master/Python/beginner200/Python200ProblemsForBeginners_1.md#%EC%A7%84%EC%88%98-%ED%91%9C%ED%98%84%EB%B2%95)
 
-     참고자료 : [2, 8, 16진수 표현법](https://github.com/TaeJuneJoung/TIL/blob/master/Python/Python200ProblemsForBeginners_1.md#%EC%A7%84%EC%88%98-%ED%91%9C%ED%98%84%EB%B2%95)
-
-
+<br><br><br>
 
 ​		**- 숫자열에서의 사칙연산**
 
-​		
+​		<br>
 
 | 연산자 | 설명            | 예시 \| 결과값 | 비고         |
 | :----: | --------------- | -------------- | ------------ |
@@ -80,7 +80,7 @@ https://wikidocs.net/
 
 - ##### 리스트 자료형
 
-  : [참조 링크](https://github.com/TaeJuneJoung/TIL/blob/master/Python/Dictionary.md)
+  : 
 
   <br>
 
@@ -96,7 +96,7 @@ https://wikidocs.net/
 
 - ##### 딕셔너리 자료형
 
-  : 
+  : [참조 링크](https://github.com/TaeJuneJoung/TIL/blob/master/Python/Dictionary.md)
 
   <br><br><br>
 
@@ -121,7 +121,7 @@ https://wikidocs.net/
       print(text)
   ```
 
-   처음 이러한 실수를 함. text가 '!menu'와 같지 않아도 뒤에 '!메뉴'가 True의 결과를 나타내기에 항상 결과는 True가 나온다. 올바른 결과를 실행하기 위해서는 아래와 같이 변경해주어야 한다.
+<br>   처음 이러한 실수를 함. text가 '!menu'와 같지 않아도 뒤에 '!메뉴'가 True의 결과를 나타내기에 항상 결과는 True가 나온다. 올바른 결과를 실행하기 위해서는 아래와 같이 변경해주어야 한다.
 
   ```python
   if(text.lower() == '!menu' or text == '!메뉴'):
