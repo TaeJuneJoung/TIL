@@ -48,7 +48,69 @@ https://wikidocs.net/
 
 - ##### 문자열 자료형(String)
 
-  : 
+  : [문자열 자료형 링크 - jump to python](https://wikidocs.net/13)
+
+  <br>
+
+  ##### 문자열 포매팅
+
+  1. 숫자 바로 대입
+
+     ```python
+     "I eat %d apples" % 3
+     
+     number = 3
+     "I eat %d apples" % number
+     ```
+
+     <br>
+
+  2. 문자열 바로 대입
+
+     ```python
+     "I eat %s apples" % "five"
+     ```
+
+     <br>
+
+  3. 2개 이상의 값 넣기
+
+     ```python
+     number = 3
+     strValue = "apples"
+     "I eat %d %s" % (number, strValue)
+     ```
+
+  <br>
+
+  ##### 포맷 코드와 숫자 함께 사용
+
+  1. 정렬과 공백
+
+     ```python
+     "%10s" %"hello"		#     hello
+     "%-10sjune."%'hi'	#hi        june.
+     ```
+
+     <br>
+
+  2. 소수점 표현
+
+     ```python
+     "%10.4f"%3.123456	#    3.1235
+     ```
+
+      위의 표현은 소수점 "%.4"로 소수점 네 번째 자리까지만 표시하고 전체 길이가 10개인 문자열 공간에서 오른쪽으로 정렬하라는 예이다. 
+
+  <br>
+
+  ##### format 함수를 이용한 포매팅
+
+  ##### f 문자열 포매팅
+
+  <br>
+
+  <br>
 
   char(Character)형은 없는지 알았으나, 있다.
 
@@ -70,7 +132,9 @@ https://wikidocs.net/
   #결과값 : 'a'
   ```
 
+<br>
 
+String은 내용이 많고 자주 쓰이니 직접 자료를 가서 확인 필요
 
   <br>
 
@@ -80,7 +144,7 @@ https://wikidocs.net/
 
 - ##### 리스트 자료형
 
-  : 
+  : [참조 링크](https://github.com/TaeJuneJoung/TIL/blob/master/Python/List.md)
 
   <br>
 
@@ -90,7 +154,7 @@ https://wikidocs.net/
 
 - ##### 튜플 자료형
 
-  : 
+  : [참조 링크](https://github.com/TaeJuneJoung/TIL/blob/master/Python/Tuple.md)
 
   <br><br><br>
 
@@ -102,7 +166,7 @@ https://wikidocs.net/
 
 - ##### 집합 자료형
 
-  : 
+  : [참조 링크](https://github.com/TaeJuneJoung/TIL/blob/master/Python/Set.md)
 
   <br><br><br>
 
