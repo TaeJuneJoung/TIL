@@ -1,6 +1,6 @@
 # Linux
 
-## CLI(Common Language Infrastructure)
+## CLI(Command Line Interface)
 
 #### : 명령 줄 인터페이스, 터미널을 통해 사용자와 컴퓨터가 상호 작용하는 방식
 
