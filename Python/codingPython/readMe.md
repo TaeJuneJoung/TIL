@@ -6,31 +6,31 @@
 
 ### 2019-01-06
 
-1. list의 값을 두 개의 변수로 받을 수 있을까?
-2. 주석은 실행속도에 관여를 할까?
-3. type 확인의 필요성 (list와 join)
+1. [list의 값을 두 개의 변수로 받을 수 있을까?](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-06.md#one)
+2. [주석은 실행속도에 관여를 할까?](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-06.md#two)
+3. [type 확인의 필요성 (list와 join)](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-06.md#three)
 
 <br>
 
 ### 2019-01-07
 
-1. split 사용법
+1. [split 사용법](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-07.md#one)
 
 <br>
 
 ### 2019-01-08
 
-1. python에서 `:`의 의미(변수의 인식범위)
+1. [python에서 `:`의 의미(변수의 인식범위)](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-08.md#one)
 
-2. method와 function의 차이
+2. [method와 function의 차이](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-08.md#two)
 
-3. 파이썬 예약어
+3. [파이썬 예약어](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-08.md#three)
 
-4. 한줄에 두 개이상의 코드 작성법 `;`
+4. [한줄에 두 개이상의 코드 작성법](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-08.md#four) `;`
 
-5. 나눗셈의 몫과 나머지 구하기
+5. [나눗셈의 몫과 나머지 구하기](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-08.md#five)
 
-6. 기타 연산자
+6. [기타 연산자](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-08.md#six)
 
    - Concatenation(접합) : +
 
@@ -41,7 +41,7 @@
    - in 연산자
    - is 연산자
 
-7. is 연산자(숫자형)
+7. [is 연산자(숫자형)](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-08.md#seven)
 
 <br>
 
