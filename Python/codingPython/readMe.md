@@ -45,4 +45,18 @@
 
 <br>
 
-### 2019-01-
+### 2019-01-10
+
+1. OOP(객체지향프로그램)
+
+<br>
+
+### 2019-01-14
+
+1. 클래스&상속
+   - @classmethod
+   - @staticmethod
+2. How to python overload
+   - Multiple Dispatch
+
+<br>
