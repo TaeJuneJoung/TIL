@@ -60,3 +60,25 @@
    - Multiple Dispatch
 
 <br>
+
+### 2019-01-17
+
+1. Jinja
+
+<br>
+
+### 2019-01-18
+
+1. Naver Movie API 사용법
+
+<br>
+
+### 2019-01-19
+
+1. open() 파일열기
+2. datetime
+   - 오늘 날짜 구하기
+   - 날짜 연산
+
+<br>
+
