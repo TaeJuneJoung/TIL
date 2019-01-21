@@ -47,23 +47,23 @@
 
 ### 2019-01-10
 
-1. OOP(객체지향프로그램)
+1. [OOP(객체지향프로그램)](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-10.md#oop)
 
 <br>
 
 ### 2019-01-14
 
-1. 클래스&상속
+1. [클래스&상속](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-14.md#one)
    - @classmethod
    - @staticmethod
-2. How to python overload
+2. [How to python overload](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-14.md#two)
    - Multiple Dispatch
 
 <br>
 
 ### 2019-01-17
 
-1. Jinja
+1. [Jinja](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-17.md#one)
 
 <br>
 
@@ -82,3 +82,14 @@
 
 <br>
 
+### 2019-01-20
+
+1. 변수명 여러개 선언하기
+
+<br>
+
+### 2019-01-21
+
+1. 얇은 복사와 깊은 복사
+2. 전역변수와 지역변수
+3. Dictionary 비교
