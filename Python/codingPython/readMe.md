@@ -69,14 +69,14 @@
 
 ### 2019-01-18
 
-1. Naver Movie API 사용법
+1. [Naver Movie API 사용법](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-18.md#one)
 
 <br>
 
 ### 2019-01-19
 
-1. open() 파일열기
-2. datetime
+1. [open() 파일열기](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-19.md#one)
+2. [datetime](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-19.md#two)
    - 오늘 날짜 구하기
    - 날짜 연산
 
@@ -84,21 +84,23 @@
 
 ### 2019-01-20
 
-1. 변수명 여러개 선언하기
+1. [변수명 여러개 선언하기](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-20.md#one)
 
 <br>
 
 ### 2019-01-21
 
-1. 얇은 복사와 깊은 복사
-2. 전역변수와 지역변수
-3. Dictionary 비교
+1. [얇은 복사와 깊은 복사](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-21.md#one)
+2. [전역변수와 지역변수](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-21.md#two)
+3. [Dictionary 비교](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-21.md#three)
 
 ### <br>2019-01-22
 
-1. SQLite
+1. [SQLite](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-22.md#sqlite)
    - 기본 SQL문법(SQL문으로 이동할것)
    - 파이썬과 DB연동
+
+2. [ORM](https://github.com/TaeJuneJoung/TIL/blob/master/Python/codingPython/2019-01-22.md#orm)
 
 <br>
 
@@ -108,3 +110,16 @@
 2. 파이썬과 DB연동
 
 <br>
+
+### 2019-01-24
+
+1. sys module
+   - sys.argv
+   - sys.exit()
+   - sys.path.append
+   - sys.stdin.readline()
+   - sys.stdin.read()
+   - sys.stdout.write()
+
+<br>
+
