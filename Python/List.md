@@ -98,6 +98,26 @@ list1.extend(x)
 
 <br>
 
+**append와 extend의 차이**
+
+```python
+x1 = [1,2,3]
+
+y = [4,5]
+#append
+x1.append(y)
+print(x1) # [1,2,3,[4,5]]
+
+x2 = [1,2,3]
+#extend
+x2.extend(y)
+print(x2) # [1,2,3,4,5]
+```
+
+
+
+
+
 ##### :three:insert(i, x)
 
  : Insert an item at a given position. The first argument is the index of the element before which to insert, so `list1.insert(0,x)` inserts at the front of the list, and `list1.insert(len(list1),x)` is equivalent to list1.append(x).
