@@ -1,3 +1,9 @@
+1. TIL정리
+2. JS공부
+3. PYTHON공부
+
+
+<hr>
 ### :one:
 
 ### Heatmap Chart
@@ -17,3 +23,20 @@
 ### Short 리다이렉트
 
 short 리다이렉트 사이트 만들기
+1. AJAX 처리
+2. ERROR 페이지 처리
+
+
+<br>
+
+### :three:
+
+### English One
+
+1. DB구조 설계
+2. 사용자 권한부여
+3. AJAX 처리
+    - CRUD
+    - LOGIN
+4. Footer
+    - developer information
