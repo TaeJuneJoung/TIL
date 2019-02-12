@@ -2,7 +2,6 @@
 2. JS공부
 3. PYTHON공부
 
-
 <hr>
 ### :one:
 
@@ -34,9 +33,10 @@ short 리다이렉트 사이트 만들기
 ### English One
 
 1. DB구조 설계
-2. 사용자 권한부여
+2. 사용자
+    - Modal(Join/Login/Update)
+    - 권한부여(글쓰기, 글삭제, 글수정)
 3. AJAX 처리
     - CRUD
-    - LOGIN
 4. Footer
     - developer information
