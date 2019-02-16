@@ -18,3 +18,8 @@
 - git push `-u`
 
 <br>
+
+### CRLF&add_cancel
+
+- LF_CRLF
+- git add cancle
