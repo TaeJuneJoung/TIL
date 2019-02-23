@@ -1,6 +1,8 @@
 1. TIL정리
 2. JS공부
 3. PYTHON공부
+4. 알고리즘 공부
+5. ML공부
 
 <hr>
 ### :one:
@@ -40,3 +42,11 @@ short 리다이렉트 사이트 만들기
     - CRUD
 4. Footer
     - developer information
+
+### :four:
+
+### ML
+
+1. Linear Regression
+2. Session
+3. Graph
