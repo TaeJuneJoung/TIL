@@ -1,8 +1,6 @@
-1. TIL정리
-2. JS공부
-3. PYTHON공부
-4. 알고리즘 공부
-5. ML공부
+1. 알고리즘 공부
+2. PYTHON공부
+3. ML공부
 
 <hr>
 ### :one:
@@ -50,3 +48,9 @@ short 리다이렉트 사이트 만들기
 1. Linear Regression
 2. Session
 3. Graph
+
+### Algorithm
+
+1. 2048
+2. 오델로
+3. 최대 상금
