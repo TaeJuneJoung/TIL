@@ -30,6 +30,55 @@
 
 <br>
 
+>   **example. Baby-gin**
+>
+>   0 ~ 9 사이의 숫자 카드에서 임의의 카드 6장을 뽑았을 때, 3장의 카드가 연속적인 번호를 갖는 경우를 run이라 하고, 3장의 카드가 동일한 번호를 갖는 경우를 triplet이라고 한다. 6자리의 숫자를 입력받아 baby-gin 여부를 판단하는 프로그램을 작성하라.
+>
+>   ```python
+>   """
+>   입력 및 출력 예)
+>   	667767 / triplet
+>   	054060 / baby-gin
+>   	101123 / triplet	#triplet을 run보다 우선시함
+>   	112233 / Not baby-gin
+>   """
+>   
+>   numbers = list(range(10))
+>   count_list = [0 for i in range(10)]
+>   arr = list(map(int, input().split()))
+>   for i in range(6):
+>       count_list[arr[i]] += 1
+>   
+>   cnt = 0
+>   isTriplet = False
+>   isRun = False
+>   
+>   for i in range(10):
+>       if count_list[i] >= 3:
+>           isTriplet = True
+>           count_list[i] -= 3
+>       if i >= 2:
+>           if count_list[i] and count_list[i+1] and count_list[i+2]:
+>               isRun = True
+>               count_list[i] -= 1
+>               count_list[i+1] -= 1
+>               count_list[i+2] -= 1
+>   
+>   res = ""
+>   if isTriplet and isRun:
+>       res = "baby-gin"
+>   elif isTriplet:
+>       res = "triplte"
+>   elif isRun:
+>       res = "run"
+>   else:
+>       res = "Not baby-gin"
+>   
+>   print(res)
+>   ```
+
+<br>
+
 > **example. 거스름돈 줄이기**
 >
 > 지폐와 동전의 개수를 최소한으로 거스름돈을 주는 방법

@@ -135,3 +135,25 @@ print(A)
 ```
 
 <br>
+
+zip함수
+
+ : 동일한 개수로 이루어진 자료형들을 묶어 주는 역할을 하는 함수
+
+`zip(iterable*)`
+
+```python
+alpha = ['a', 'b', 'c']
+index = [1, 2, 3]
+print(list(zip(alpha, index))) #[('a', 1), ('b', 2), ('c', 3)]
+
+# zip(*matrix) : 전치 행렬
+arr = [[1,2,3],[4,5,6],[7,8,9]]
+print(list(zip(*arr))) #[(1, 4, 7), (2, 5, 8), (3, 6, 9)]
+
+# 람다식을 이용한 방법
+arr = [[1,2,3],[4,5,6],[7,8,9]]
+for k in range(3):
+    print(list(map(lambda i: i[k] , arr)))
+```
+
