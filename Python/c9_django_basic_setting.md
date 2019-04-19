@@ -4,25 +4,25 @@
 
 ```bash
 # pyenv install
-$ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
-$ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
-$ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 
-$ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
 
-$ exec "$SHELL"
+exec "$SHELL"
 
 # python version upgrade
-$ pyenv install 3.6.7
-$ pyenv global 3.6.7
-$ pyenv rehash
+pyenv install 3.6.7
+pyenv global 3.6.7
+pyenv rehash
 
 # pip upgrade
-$ pip install --upgrade pip
+pip install --upgrade pip
 
 # install django
-$ pip install django
+pip install django==2.1.8
 
 # virtualenv intall
 $ git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
