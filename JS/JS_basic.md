@@ -1,5 +1,47 @@
 # JavaScript
 
+# JS
+
+| HTML      | CSS                     | JavaScript      |
+| --------- | ----------------------- | --------------- |
+| structure | presentation/appearance | dynamism/action |
+
+<br>
+
+### ES6
+
+`ECMA`<br>
+
+20190425 ES8표준안까지 나옴<br>
+
+기술적으로는 ES6를 현업에서 사용<br>
+
+Brendan Eich(브렌던 아이크) 미국의 프로그래머가 만듬.
+
+모카라는 이름으로 만들어졌다가 이후 JavaScript로 바뀜. 자바의 
+
+<br>
+
+### Vanilla JS
+
+웹에서 작동하는 Script
+
+웹브라우저를 위해서 문서 액션을 넣기 위해 쓰여짐
+
+### Node JS
+
+서버를 만들고 조작할 수 있는 Script
+
+<br>
+
+JavaScript가 두개로 나눠진다고 보면 되는데,
+
+웹에서 쓰이면 Vanilla JS로 쓰인다고 보면 되고, 서버에서 쓰이면 Node JS로 쓰인다고 보면 된다.
+
+결국은 같은 JavaScript라고 보면 된다.
+
+<br><br><br>
+
 `[소년코딩`분이 정리한 것을 보고 학습을 위해 작성하였습니다. 문제가 될시 삭제하겠습니다.](https://boycoding.tistory.com)
 
 자바스크립트 구현은 3가지고 나뉜다.
