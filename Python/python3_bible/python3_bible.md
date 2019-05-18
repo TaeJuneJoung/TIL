@@ -87,3 +87,116 @@ page105부터 다루면 됨
 """
 ```
 
+### Str
+
+```python
+"""
+ -남은 자리는 white space가 들어간다
+ -부족하면 해당 값만 출력
+"""
+res = '{0:5s}'.format('egg')
+print(res) #egg 
+print(len(res)) #5
+
+"""
+m개의 최소 자리를 확보하고,
+n개의 소수점 이하 자리를 출력
+반올림을 알아서 함
+값과 공간할당에 빈공간만큼 처음 시작에 white space
+왼쪽 정렬 출력으로 하고 싶으면 `<`사용하면 됨.
+오른쪽 정렬은 반대로 `>`
+"""
+res = '{0:10.3f}'.format(123.456789)
+print(res) #   123.456
+
+res = '{0:<10.3f}'.format(123.456789)
+print(res) #123.456
+
+res = '{0:<+10.3f}'.format(123.456789)
+print(res) #+123.456
+
+#-는 출력되지 않음
+res = '{0:<-10.3f}'.format(123.456789)
+print(res) #123.456
+
+#부호가 값과 반대일때는 적용되지 않음
+res = '{0:<+10.3f}'.format(-123.456789)
+print(res) #123.456
+
+"""
+2진수 출력에는 #b
+8진수 출력에는 #o
+16진수 출력에는 #x
+"""
+res = '{0:#b}'.format(123)
+print(res) #0b1111011
+
+res = '{0:#o}'.format(123)
+print(res) #0o173
+
+res = '{0:#x}'.format(123)
+print(res) #0x7b
+
+"""
+빈공간 특정값 출력
+"""
+res = '{0:05d}'.format(123)
+print(res) #00123
+
+
+
+"""
+문자열 메서드
+"""
+res = 'I like programming'
+print(res.upper()) #I LIKE PROGRAMMING
+print(res.lower()) #i like programming
+print(res.swapcase()) #i LIKE PROGRAMMING
+print(res.capitalize()) #I like programming
+print(res.title()) #I Like Programming
+
+print(res.rindex('i'))
+print(len(res))
+
+# res[res.rindex('i')] = 'I' TypeError: 'str' object does not support item assignment
+#str타입은 아래와 같이 변경
+res = res.replace(res[res.rindex('i')],'I', 1)
+print(res) #I lIke programming
+print(res.rindex('i'))
+
+res = 'I like programming'
+def replaceRight(original, old, new, count_right):
+    repeat=0
+    text = original
+    
+    count_find = original.count(old)
+    if count_right > count_find : # 바꿀 횟수가 문자열에 포함된 old보다 많다면
+        repeat = count_find # 문자열에 포함된 old의 모든 개수(count_find)만큼 교체한다
+    else :
+        repeat = count_right # 아니라면 입력받은 개수(count)만큼 교체한다
+
+    for _ in range(repeat):
+        find_index = text.rfind(old) # 오른쪽부터 index를 찾기위해 rfind 사용
+        text = text[:find_index] + new + text[find_index+1:]
+    
+    return text
+
+print(replaceRight(res, res[res.rindex('i')], 'I', 1))
+
+res = '''I 
+        like 
+        programming'''
+print(res.splitlines()) #['I ', 'like ', 'programming']
+print(res.split(' ', 1)) #['I', '\nlike \nprogramming']
+
+res = 'I like programing'
+print(res.center(30, '-')) #------I like programing-------
+print(res.ljust(30, '-')) #I like programing-------------
+print(res.rjust(30, '-')) #-------------I like programing
+
+instr = 'abcdef'
+outstr = '123456'
+trantab = ''.maketrans(instr, outstr)
+print(trantab)
+```
+
