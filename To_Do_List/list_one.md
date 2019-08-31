@@ -1,8 +1,3 @@
-1. 알고리즘 공부
-2. PYTHON공부
-3. 알고리즘 Git 내용 올리기
-
-<hr>
 ### :one:
 
 ### Heatmap Chart
@@ -19,17 +14,6 @@
 
 ### :two:
 
-### Short 리다이렉트
-
-short 리다이렉트 사이트 만들기
-1. AJAX 처리
-2. ERROR 페이지 처리
-
-
-<br>
-
-### :three:
-
 ### English One
 
 1. DB구조 설계
@@ -41,19 +25,13 @@ short 리다이렉트 사이트 만들기
 4. Footer
     - developer information
 
-### :four:
+### :three:
 
 ### ML
 
 1. Linear Regression
 2. Session
 3. Graph
-
-### Algorithm
-
-1. 2048
-2. 오델로
-3. 최대 상금
 
 ### Dev
 
