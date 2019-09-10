@@ -237,3 +237,68 @@ etc...
 
     > 작성 내역을 나타냄
 
+
+
+
+
+
+
+:page_facing_up:**실습 문제.**
+
+```python
+#초기 폴더 구조
+"""
+test/
+	test/
+		123.txt
+		321.txt
+		987.txt
+		abc.txt
+		test.txt
+		test2.txt
+		test3.txt
+"""
+
+#결과 폴더 구조
+"""
+test/
+	test/
+		abc.txt
+		test.txt
+		test2.txt
+		test3.txt
+	en/
+		abc.txt
+		test.txt
+	num/
+		123.txt
+		321.txt
+		987.txt
+"""
+
+
+#Q1. 최상단 test폴더 안에 `en`폴더와 `num`폴더를 만들어 보세요.
+#Q2. en폴더에 영어로만 이뤄진 txt파일들을 복사해주세요.
+#Q3. num폴더에 숫자로만 이뤄진 txt파일들을 이동 시켜주세요.
+```
+
+
+
+<div class="problem_answer" style="display: none">
+    <small><b>경로가 상단 test라고 할 때,</b></small>
+    <br/>
+    A1. <br/>
+    &emsp;<u>mkdir en</u><br/>
+    &emsp;<u>mkdir num</u><br/>
+    <br/>
+    A2. <br/>
+    &emsp;<u>cp ./test/*[a-Za-z].txt ./en</u><br/>
+    <br/>
+    A3. <br/>
+    &emsp;<u>mv ./test/[0-9]*.txt ./num</u><br/>
+</div>
+
+
+
+<button style="background-color: #42b983; color: white; border: none;"  onClick="document.querySelector('.problem_answer').style.display = 'block'">답보기</button>
+
