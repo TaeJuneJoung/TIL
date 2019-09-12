@@ -12,9 +12,9 @@ https://www.oracle.com/technetwork/java/javase/downloads/index.html 에서
 
 
 
-![JAVA8](../_asset/Java/java_download_01.png)
+![JAVA8_01](../_asset/java/java_install_01.PNG)
 
-![JAVA8](../_asset/Java/java_download_02.png)
+![JAVA8_02](../_asset/java/java_install_02.PNG)
 
 우리나라에서 많이 사용하는 Java8을 다운받아 학습을 하려고 한다.
 
