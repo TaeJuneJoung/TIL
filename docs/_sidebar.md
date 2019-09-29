@@ -7,6 +7,8 @@
 - :snake: Python
 
   - [파이썬을 쓰는 이유](/python/why_python.md)
+
+  - [List](/python/list.md)
   
   - [Assert문](/python/assert.md)
   
