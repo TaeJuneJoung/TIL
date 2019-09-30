@@ -9,6 +9,8 @@
   - [파이썬을 쓰는 이유](/python/why_python.md)
 
   - [List](/python/list.md)
+
+  - [Sort](/python/sort.md)
   
   - [Assert문](/python/assert.md)
   
@@ -22,5 +24,12 @@
 
 - :cloud: Cloud
 
+  - [온프레스와 클라우드](/cloud/onpremises_cloud.md)
+
   - [Heroku vs. AWS](/cloud/heroku_vs_aws.md)
 
+- :bookmark_tabs: IT용어
+
+  - [CORS](/terms/CORS.md)
+
+  - [병목현상](/terms/bottlelneck.md)
