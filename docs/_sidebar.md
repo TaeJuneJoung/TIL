@@ -14,12 +14,17 @@
   
   - [Assert문](/python/assert.md)
   
--  :wrench:파이썬 파이썬답게
+- :wrench: 파이썬 파이썬답게
 
   - [Intro](/python/as_python/as_python_intro.md)
   - [divmod](/python/as_python/as_python_divmod.md)
   - [n진수 10진수 변환](/python/as_python/as_python_num_base.md)
   - [문자열 정렬](/python/as_python/as_python_string_align.md)
+
+
+- :heart_eyes_cat: AI
+
+  - [AI Intro](/ai/ai_intro.md)
 
 
 - :cloud: Cloud
@@ -33,3 +38,5 @@
   - [CORS](/terms/CORS.md)
 
   - [병목현상](/terms/bottlelneck.md)
+
+  - [OSI 참조모델](/terms/osi.md)
