@@ -15,6 +15,8 @@
   - [Range 구현](/python/range.md)
   
   - [Assert문](/python/assert.md)
+
+  - [Underscore 사용](/python/underscore.md)
   
 - :wrench: 파이썬 파이썬답게
 
