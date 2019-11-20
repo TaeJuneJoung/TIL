@@ -26,6 +26,10 @@
   - [문자열 정렬](/python/as_python/as_python_string_align.md)
 
 
+- :fire: 열혈 파이썬 중급
+
+  - [가비지 컬렉션](/python/middle/garbage_collection.md)
+
 - :heart_eyes_cat: AI
 
   - [AI Intro](/ai/ai_intro.md)
