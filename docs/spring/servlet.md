@@ -68,7 +68,7 @@ Servlet 실행 단계마다 호출되어 기능을 수행하는 Callback method
 | 작업 수행      | doGet()<br />doPost() | - Servlet 요청 시 매번 호출됨<br />- 실제로 클라이언트가 요청하는 작업을 수행함 |
 | 종료           | destroy()             | - Servlet이 기능을 수행하고 메모리에서 소멸될 때 호출됨<br />- Servlet의 마무리 작업을 주로 수행함 |
 
-:man_teacher:init()와 destroy() Method는 생략 가능하나 doXXX() Method는 반드시 구현해야함
+:pencil2:init()와 destroy() Method는 생략 가능하나 doXXX() Method는 반드시 구현해야함
 
 
 
@@ -108,9 +108,11 @@ public class HelloServlet extends HttpServlet {
 }
 ```
 
-#### Tomcat의 servlet-api.jar class path 설정하기
+#### Tomcat의 `servlet-api.jar` class path 설정하기
 
 - Servlet API는 tomcat의 servlet-api.jar 라이브러리로 제공되므로 class path를 설정해야 사용할 수 있다.
+
+:warning:해당 부분을 추가하지 않으면 라이브러리를 import하지 못함
 
 
 
@@ -155,4 +157,135 @@ version="4.0">
 `<url-pattern>`: 웹 브라우저에서 요청하는 매핑 이름 :warning:해당 부분에 `/`를 넣지 않아서 tomcat오류로 문제가 있었음
 
 `http://주소:port/프로젝트명/Servlet매핑명`
+
+
+
+### 다수의 서블릿 매핑하기
+
+- 일반적인 웹 어플리케이션은 각 기능에 대한 Servlet을 따로 만들어서 서비스를 제공함
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+id="WebApp_ID"
+version="4.0">
+
+  <servlet>
+  	<servlet-name>hello</servlet-name>
+  	<servlet-class>exam.HelloServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>second</servlet-name>
+  	<servlet-class>exam.SecondServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>hello</servlet-name>
+  	<url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>second</servlet-name>
+  	<url-pattern>/second</url-pattern>
+  </servlet-mapping>
+</web-app>
+```
+
+추가될 때마다 하나씩 연결했던 부분과 동일하게 만들어주면 됨.
+
+
+
+**Servlet 동작 과정**
+
+![Servlet 동작 과정](../_asset/spring/servlet_tomcat_container_process.png)
+
+
+
+## Annotation을 이용한 Servlet Mapping
+
+- web.xml에 여러 Servlet 매핑 설정시 복잡해짐
+- Servlet 클래스에 직접 Annotation으로 설정하면 가독성이 좋아짐
+- @WebServlet을 이용해서 Servlet 매핑을 구현함
+
+```java
+@WebServlet("/test")
+public class ServletTest extends HttpServlet {
+    // ...
+}
+```
+
+:warning:**Annotation을 이용해서 만드는 Servlet class는 반드시 HttpServlet을 상속 받아야 한다.**
+
+
+
+```java
+package exam;
+
+import jakarta.servlet.http.HttpServlet;
+import java.io.IOException;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class AnnotationServlet
+ */
+@WebServlet("/anno")
+public class AnnotationServlet extends HttpServlet {
+	// Servlet class 직렬화를 위해 이클립스에서 자동으로 지정한 상수
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public AnnotationServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	@Override
+	public void destroy() {
+		// TODO Auto-generated method stub
+		System.out.println("Annotation Servlet Destroy!");
+	}
+
+	@Override
+	public void init() throws jakarta.servlet.ServletException {
+		// TODO Auto-generated method stub
+		System.out.println("Annotation Servlet Init!");
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}
+```
+
+Class 형태로 만들어서 내용을 구성한 것이 아닌, Servlet으로 바로 만들었는데 조금의 문제가 있다.
+
+버전이 높아서 그런지 import에서 `jakarta.servlet`으로 사용하고 있는데 만들어진 부분은 구버전에 맞춰서 나오는거라 그런지 javax로 되어 있어서 import부분에서 오류가 발생하여 수정하였다.
+
+> **tomcat 버전에 따라 servlet-api.jar 부분에서 차이가 있는 것으로 보임**
+
+:warning:기존의 mapping 이름과 중복이 되면 오류가 발생한다. 그러니 중복되지 않도록 주의!
+
+
+
+
 
